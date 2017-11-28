@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Jekyll, NexT" />
+  <meta name="keywords" content="Foo,Bar,Baz," />
 
 
 
@@ -109,14 +109,17 @@
 
 
 
-<meta name="keywords" content="Jekyll, NexT">
+<meta name="description" content="This post contains 3 tags. Make sure your theme can display all of the tags.">
+<meta name="keywords" content="Foo, Bar, Baz">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://localhost:4000/category/">
+<meta property="og:title" content="Tags">
+<meta property="og:url" content="http://localhost:4000/see/2013-12-24-tags/">
 <meta property="og:site_name" content="Piljae">
+<meta property="og:description" content="This post contains 3 tags. Make sure your theme can display all of the tags.">
 <meta property="og:locale" content="ko">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="Tags">
+<meta name="twitter:description" content="This post contains 3 tags. Make sure your theme can display all of the tags.">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -149,7 +152,7 @@
 
 
 
-  <title>categories</title>
+  <title>Tags</title>
   
 
 
@@ -174,7 +177,7 @@
   
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -287,54 +290,21 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-<section id="posts" class="posts-collapse" hidden>
-  <div class="collection-title">
-    <h2>
-    categories
-    <small>카테고리</small>
-    </h2>
-  </div>
+<div id="posts" class="posts-expand">
+<header class="post-header">
+
+	<h2 class="post-title" itemprop="name headline">Tags</h2>
+
+
+
+</header>
 
   
   
+    <p>This post contains 3 tags. Make sure your theme can display all of the tags.</p>
 
   
-    
-    
-
-    
-      
-
-      
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article" route="/tutorial">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/tutorial/2017/07/20/next-tutorial/" itemprop="url">
-              
-                <span itemprop="name">Next Theme Tutorial haha</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-20T00:00:00+09:00"
-              content="2017-07-20" >
-          07-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-    
-  
-</section>
-
-<nav class="pagination"></nav>
+</div>
 
 
           </div>
@@ -565,99 +535,9 @@
   
   
 
-  
-    
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
 
-
-
-  <script type="text/javascript" src="/assets/js/src/paginator.js"></script>
-  <script>
-    (function() {
-      // Url route
-      var hash = window.location.hash.substring(1);
-      $(window).on('hashchange', function() {
-        location.reload();
-        $(this).scrollTop(0);
-      });
-
-      if (!hash)
-        hash = "/";
-      $('[route][route!="' + hash + '"]').remove();
-      $('#posts').show();
-
-      // Pagination
-      
-
-      
-
-      
-        if (hash == "/")  {
-          window.location = "/categories/";
-          return;
-        }
-
-        
-        
-
-        var maps = { 'tutorial': 1, };
-        var dirs = hash.split("/");
-        var collection = decodeURIComponent(dirs[1]);
-        dirs.splice(0, 2);
-        hash = "/" + dirs.join("/");
-
-        if (!collection) {
-          window.location = "/categories/";
-          return;
-        }
-
-        $('.collection-title')[0].childNodes[1].childNodes[0].nodeValue = collection;
-        document.title = "카테고리: " + collection + " | Piljae";
-
-        var sizes = maps[collection];
-        var base = "#" + "/" + collection;
-      
-
-      var current = 0;
-
-      if (hash != '/') {
-        
-
-        var reg = /(?:\/page(\d+))/;
-        var res = reg.exec(hash);
-
-        if (res && res[1])
-          current = parseInt(res[1]);
-      }
-      else {
-        current = 1;
-      }
-
-      var total = Math.floor(sizes / 5);
-      if (sizes % 5 > 0) {
-        total = total + 1;
-      }
-
-      if (total <= 1) {
-        $('nav.pagination').remove();
-      }
-      else {
-        var content = paginator({
-                          prev_text: '<i class="fa fa-angle-left"></i>',
-                          next_text: '<i class="fa fa-angle-right"></i>',
-                          current: current,
-                          total: total,
-                          base: base,
-                          format: "/page%d",
-                          mid_size: 1,
-                          end_size: 1
-                        });
-          $('nav.pagination').html(content);
-      }
-    })();
-  </script>
-
-
-  
 
   
 

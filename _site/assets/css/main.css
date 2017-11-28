@@ -370,13 +370,13 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 
 .header-inner { position: relative; }
 
-.headband { height: 3px; background: #222; }
+.headband { height: 0px; background: #222; }
 
 .site-meta { margin: 0; text-align: center; }
 @media (max-width: 767px) { .site-meta { text-align: center; } }
 
-.brand { position: relative; display: inline-block; padding: 0 40px; color: white; background: #222; border-bottom: none; }
-.brand:hover { color: white; }
+.brand { position: relative; display: inline-block; padding: 0 40px; color: black; background: white; border-bottom: none; }
+.brand:hover { color: #999; }
 
 .logo { display: inline-block; margin-right: 5px; line-height: 36px; vertical-align: top; }
 
@@ -400,7 +400,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 .menu .menu-item { display: inline-block; margin: 0 10px; list-style: none; }
 @media screen and (max-width: 767px) { .menu .menu-item { margin-top: 10px; } }
 .menu .menu-item a { display: block; font-size: 13px; line-height: inherit; border-bottom: 1px solid transparent; transition-property: border-color; transition-duration: 0.2s; transition-timing-function: ease-in-out; transition-delay: 0s; }
-.menu .menu-item a:hover { border-bottom-color: #222; }
+.menu .menu-item a:hover { border-bottom-color: transparent; }
 .menu .menu-item .fa { margin-right: 5px; }
 
 .use-motion .menu-item { opacity: 0; }
@@ -558,7 +558,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 .links-of-author { margin-top: 20px; }
 
 .links-of-author a { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 10px; border-bottom-color: #555; font-size: 13px; }
-.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #005900; }
+.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: white; }
 
 .links-of-blogroll { font-size: 13px; }
 

@@ -206,22 +206,22 @@ $gap-between-main-and-footer    : 100px;
 
 // Headband
 // --------------------------------------------------
-$headband-height                : 3px;
+$headband-height                : 0px;
 $headband-bg                    : $black-deep;
 
 
 
 // Section Header
-// Variables for header section elements.
+// Variables for jekyll build --watch section elements.
 // --------------------------------------------------
 
 $head-bg                        : transparent;
 
 // Site Meta
 $site-meta-text-align           : center;
-$brand-color                    : white;
-$brand-hover-color              : white;
-$brand-bg                       : $black-deep;
+$brand-color                    : black;
+$brand-hover-color              : $grey-dark;
+$brand-bg                       : white;
 
 $logo-font-size                 : 20px;
 $logo-font-size                 : if(type-of(jekyll-config('font.logo.size')) == 'number', jekyll-config('font.logo.size') + px, $logo-font-size);
@@ -232,7 +232,7 @@ $subtitle-color                 : $grey-dark;
 
 // Menu
 $menu-link-border               : transparent;
-$menu-link-hover-border         : $black-deep;
+$menu-link-hover-border         : transparent;
 
 
 
