@@ -426,15 +426,7 @@ changyan:
 google_site_verification: googleaad76ff7844c797c.html
 
 # Google Analytics
-google_analytics: 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110331043-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-110331043-1');
-</script>
+google_analytics: UA-110331043-1
 
 
 # Yandex Webmaster tools verification setting
